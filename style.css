@@ -34,8 +34,8 @@ body, html {
     font-family: sans-serif;
     font-size: 4svmin;
     box-sizing: border-box;
-    touch-action: none;
     
+    -webkit-touch-callout: none;
     
     -webkit-user-select:none;
     -moz-touch-callout:none;
