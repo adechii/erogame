@@ -207,8 +207,9 @@ const keydown = (e) => {
     if (
         (
             e.code === 'KeyA' || e.code === 'ArrowLeft' ||
-            e.code === 'KeyD' || e.code === 'ArrowRight') &&
-            player.eaten > 0
+            e.code === 'KeyD' || e.code === 'ArrowRight'
+        ) &&
+        player.eaten > 0
     ) {
         player.eaten -= 16
         if(player.eaten <= 0) player.x = enemy.x - enemy.w * 2
@@ -239,6 +240,16 @@ const downButton = (e) => {
             enemy.x = 640
             enemy.y = 0
         }
+    }
+    if (
+        (
+            e.target.id === 'left-button' ||
+            e.target.id === 'right-button'
+        ) &&
+        player.eaten > 0
+    ) {
+        player.eaten -= 16
+        if(player.eaten <= 0) player.x = enemy.x - enemy.w * 2
     }
 }
 const upButton = (e) => {
