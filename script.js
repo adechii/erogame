@@ -249,7 +249,7 @@ const downButton = (e) => {
         player.eaten > 0
     ) {
         player.eaten -= 16
-        if(player.eaten <= 0) player.x = enemy.x - enemy.w * 2
+        if(player.eaten <= 0) player.x = enemy.x - player.w * 2
     }
 }
 const upButton = (e) => {
