@@ -303,6 +303,8 @@ playerImage.addEventListener('load', loadPlayer)
 enemyImage.addEventListener('load', loadEnemy)
 
 // 長押し禁止
-window.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
+window.addEventListener('contextmenu', (e) => {
+     event.preventDefault();
+     event.stopPropagation();
+     return false;
 }, false);
