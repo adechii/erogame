@@ -301,3 +301,8 @@ const loadEnemy = (e) => {
 }
 playerImage.addEventListener('load', loadPlayer)
 enemyImage.addEventListener('load', loadEnemy)
+
+// 長押し禁止
+window.addEventListener("contextmenu", (e) => {
+    e.preventDefault();
+}, false);

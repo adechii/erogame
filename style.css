@@ -36,7 +36,10 @@ body, html {
     box-sizing: border-box;
     touch-action: none;
     
-    -webkit-touch-callout:none;
+    pointer-events: none;
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+    touch-callout: none;
     -webkit-user-select:none;
     -moz-touch-callout:none;
     -moz-user-select:none;
