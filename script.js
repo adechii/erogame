@@ -212,7 +212,7 @@ const keydown = (e) => {
         player.eaten > 0
     ) {
         player.eaten -= 16
-        if(player.eaten <= 0) player.x = enemy.x - enemy.w
+        if(player.eaten <= 0) player.x = enemy.x - enemy.w * 1.5
     }
 }
 const keyup = (e) => {
