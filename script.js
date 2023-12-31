@@ -303,13 +303,13 @@ playerImage.addEventListener('load', loadPlayer)
 enemyImage.addEventListener('load', loadEnemy)
 
 // 長押し禁止
-window.addEventListener('contextmenu', (e) => {
+document.addEventListener('contextmenu', (e) => {
      event.preventDefault();
      event.stopPropagation();
      return false;
 }, { passive: false })
 // ダブルタップ禁止
-window.addEventListener('dblclick', (e) => {
+document.addEventListener('dblclick', (e) => {
      event.preventDefault();
      event.stopPropagation();
      return false;
