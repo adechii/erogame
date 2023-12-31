@@ -304,13 +304,11 @@ enemyImage.addEventListener('load', loadEnemy)
 
 // 長押し禁止
 document.addEventListener('contextmenu', (e) => {
-     event.preventDefault();
-     event.stopPropagation();
-     return false;
+     event.preventDefault()
+     event.stopPropagation()
+     return false
 }, { passive: false })
 // ダブルタップ禁止
 document.addEventListener('dblclick', (e) => {
-     event.preventDefault();
-     event.stopPropagation();
-     return false;
+     event.preventDefault()
 }, { passive: false })
