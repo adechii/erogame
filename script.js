@@ -267,11 +267,13 @@ enemySelectButton.addEventListener('click', selectEnemy)
 const changePlayer = (e) => {
 	const blobUrl = URL.createObjectURL( e.target.files[0] )
     playerImage.src = blobUrl
+    playerSelectButton.value = blobUrl
     start = false
 }
 const changeEnemy = (e) => {
 	const blobUrl = URL.createObjectURL( e.target.files[0] )
     enemyImage.src = blobUrl
+    enemySelectButton.value = blobUrl
     start = false
 }
 playerSelect.addEventListener('change', changePlayer, false)
