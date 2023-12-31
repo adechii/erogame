@@ -10,6 +10,13 @@ input[type="button"], a {
     padding: 0.5em 1em;
     text-decoration: none;
     touch-action: manipulation;
+    
+    -webkit-touch-callout: none;
+    
+    -webkit-user-select:none;
+    -moz-touch-callout:none;
+    -moz-user-select:none;
+    user-select:none;
 }
 
 div {
