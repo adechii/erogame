@@ -307,4 +307,10 @@ window.addEventListener('contextmenu', (e) => {
      event.preventDefault();
      event.stopPropagation();
      return false;
-}, false);
+}, { passive: false })
+// ダブルタップ禁止
+window.addEventListener('dblclick', (e) => {
+     event.preventDefault();
+     event.stopPropagation();
+     return false;
+}, { passive: false })
